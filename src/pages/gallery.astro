@@ -1,0 +1,509 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Gallery - MaizeSupply Pro" description="View our gallery showcasing premium maize products, farming operations, packaging facilities, and transportation services.">
+  <!-- Hero Section -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Our Gallery</h1>
+        <p>Showcasing our quality maize, farming partnerships, and supply chain operations</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Categories -->
+  <section class="section gallery-nav">
+    <div class="container">
+      <div class="category-filters">
+        <button class="filter-btn active" data-category="all">All Images</button>
+        <button class="filter-btn" data-category="maize">Maize Products</button>
+        <button class="filter-btn" data-category="farming">Farming Operations</button>
+        <button class="filter-btn" data-category="processing">Processing & Packaging</button>
+        <button class="filter-btn" data-category="logistics">Transportation</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Grid -->
+  <section class="section gallery-section">
+    <div class="container">
+      <div class="gallery-grid" id="gallery-grid">
+        <!-- Maize Products -->
+        <div class="gallery-item" data-category="maize">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/547263/pexels-photo-547263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Premium yellow maize kernels" />
+            <div class="gallery-overlay">
+              <h3>Premium Yellow Maize</h3>
+              <p>High-quality maize kernels ready for processing and distribution</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="maize">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/1595108/pexels-photo-1595108.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Maize storage facility" />
+            <div class="gallery-overlay">
+              <h3>Quality Storage</h3>
+              <p>Climate-controlled storage facilities maintaining optimal grain condition</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="processing">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/5591663/pexels-photo-5591663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Maize packaging process" />
+            <div class="gallery-overlay">
+              <h3>Professional Packaging</h3>
+              <p>Modern packaging facilities ensuring product freshness and quality</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Farming Operations -->
+        <div class="gallery-item" data-category="farming">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/2589457/pexels-photo-2589457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Golden maize field at sunset" />
+            <div class="gallery-overlay">
+              <h3>Partner Farms</h3>
+              <p>Vast maize fields from our trusted farming partners</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="farming">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/5647021/pexels-photo-5647021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Farmers working together" />
+            <div class="gallery-overlay">
+              <h3>Farmer Partnerships</h3>
+              <p>Collaborative relationships with local farming communities</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="farming">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/3056960/pexels-photo-3056960.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Maize harvest season" />
+            <div class="gallery-overlay">
+              <h3>Harvest Season</h3>
+              <p>Fresh maize being harvested during peak season</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Processing & Packaging -->
+        <div class="gallery-item" data-category="processing">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/4033328/pexels-photo-4033328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Quality control testing" />
+            <div class="gallery-overlay">
+              <h3>Quality Control</h3>
+              <p>Rigorous testing ensures every batch meets our high standards</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="processing">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/5591836/pexels-photo-5591836.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Packaging facility" />
+            <div class="gallery-overlay">
+              <h3>Packaging Facility</h3>
+              <p>State-of-the-art packaging equipment for various bag sizes</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="maize">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/6069641/pexels-photo-6069641.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Packaged maize products" />
+            <div class="gallery-overlay">
+              <h3>Ready for Distribution</h3>
+              <p>Professionally packaged maize products ready for delivery</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Transportation -->
+        <div class="gallery-item" data-category="logistics">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/1095814/pexels-photo-1095814.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Delivery truck fleet" />
+            <div class="gallery-overlay">
+              <h3>Delivery Fleet</h3>
+              <p>Modern transportation fleet ensuring safe and timely delivery</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="logistics">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/1309899/pexels-photo-1309899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Loading operations" />
+            <div class="gallery-overlay">
+              <h3>Loading Operations</h3>
+              <p>Efficient loading processes for quick and secure transport</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="logistics">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/1002638/pexels-photo-1002638.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Warehouse operations" />
+            <div class="gallery-overlay">
+              <h3>Warehouse Operations</h3>
+              <p>Organized storage and distribution centers across the region</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Images -->
+        <div class="gallery-item" data-category="farming">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/2255934/pexels-photo-2255934.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Sustainable farming practices" />
+            <div class="gallery-overlay">
+              <h3>Sustainable Farming</h3>
+              <p>Environmentally responsible farming techniques</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="maize">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/416978/pexels-photo-416978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Fresh maize on the cob" />
+            <div class="gallery-overlay">
+              <h3>Farm Fresh Maize</h3>
+              <p>Fresh maize directly from our partner farms</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="processing">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/4021779/pexels-photo-4021779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Processing facility" />
+            <div class="gallery-overlay">
+              <h3>Processing Excellence</h3>
+              <p>Advanced processing equipment maintaining grain quality</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics Section -->
+  <section class="section gallery-stats">
+    <div class="container">
+      <h2 class="section-title">Our Operations in Numbers</h2>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon">🌾</div>
+          <div class="stat-number">1000+</div>
+          <div class="stat-label">Tons Processed Monthly</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🚚</div>
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Delivery Vehicles</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🏭</div>
+          <div class="stat-number">5</div>
+          <div class="stat-label">Processing Facilities</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">📦</div>
+          <div class="stat-number">10K+</div>
+          <div class="stat-label">Packages Daily</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="section cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Experience Our Quality?</h2>
+        <p>See the difference that professional maize supply services can make for your business. Contact us today for a quote.</p>
+        <div class="cta-buttons">
+          <a href="/contact" class="btn btn-primary">Get Quote</a>
+          <a href="/services" class="btn btn-outline">View Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    color: white;
+    padding: 120px 0 80px;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .gallery-nav {
+    background: white;
+    padding: 40px 0;
+  }
+
+  .category-filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .filter-btn {
+    background: transparent;
+    border: 2px solid #e5e7eb;
+    color: #6b7280;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+
+  .filter-btn:hover,
+  .filter-btn.active {
+    background: #22c55e;
+    border-color: #22c55e;
+    color: white;
+  }
+
+  .gallery-section {
+    background: #f9fafb;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+
+  .gallery-item {
+    transition: all 0.3s ease;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .gallery-item.hidden {
+    opacity: 0;
+    transform: scale(0.8);
+    pointer-events: none;
+  }
+
+  .gallery-image {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .gallery-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  }
+
+  .gallery-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .gallery-image:hover img {
+    transform: scale(1.05);
+  }
+
+  .gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: white;
+    padding: 30px 20px 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .gallery-image:hover .gallery-overlay {
+    transform: translateY(0);
+  }
+
+  .gallery-overlay h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+
+  .gallery-overlay p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin: 0;
+  }
+
+  .gallery-stats {
+    background: white;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+  }
+
+  .stat-card {
+    text-align: center;
+    padding: 30px 20px;
+    background: #f9fafb;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+
+  .stat-card:hover {
+    background: white;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transform: translateY(-3px);
+  }
+
+  .stat-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #22c55e;
+    margin-bottom: 5px;
+  }
+
+  .stat-label {
+    color: #6b7280;
+    font-size: 0.95rem;
+  }
+
+  .cta {
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    color: white;
+  }
+
+  .cta-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+
+    .gallery-grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-image {
+      height: 200px;
+    }
+
+    .gallery-image img {
+      height: 200px;
+    }
+
+    .category-filters {
+      gap: 10px;
+    }
+
+    .filter-btn {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+
+    .cta-content h2 {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+
+    .gallery-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .category-filters {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .cta-content h2 {
+      font-size: 1.75rem;
+    }
+  }
+</style>
+
+<script>
+  // Gallery filtering functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', function(this: HTMLButtonElement) {
+        const category = this.getAttribute('data-category');
+        
+        // Update active button
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+        
+        // Filter gallery items
+        galleryItems.forEach(item => {
+          if (category === 'all' || item.getAttribute('data-category') === category) {
+            item.classList.remove('hidden');
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+      });
+    });
+  });
+</script>

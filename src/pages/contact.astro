@@ -1,0 +1,569 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact Us - MaizeSupply Pro" description="Get in touch with MaizeSupply Pro for quotes, inquiries, and partnership opportunities. Phone, email, WhatsApp, and business hours information.">
+  <!-- Hero Section -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Contact Us</h1>
+        <p>Ready to partner with us? Get in touch for quotes, inquiries, and more information</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Information -->
+  <section class="section contact-info">
+    <div class="container">
+      <div class="grid grid-3">
+        <div class="contact-card">
+          <div class="contact-icon">📞</div>
+          <h3>Phone</h3>
+          <p>Call us during business hours for immediate assistance</p>
+          <div class="contact-details">
+            <a href="tel:+254111816896">+254 111-816-896</a>
+            <span class="contact-note">Mon-Fri: 8:00 AM - 6:00 PM</span>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">📧</div>
+          <h3>Email</h3>
+          <p>Send us your inquiries and we'll respond within 24 hours</p>
+          <div class="contact-details">
+            <a href="mailto:benardmachukao8@gmail.com">benardmachukao8@gmail.com</a>
+            <span class="contact-note">Response within 24 hours</span>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">💬</div>
+          <h3>WhatsApp</h3>
+          <p>Quick messaging for urgent inquiries and order updates</p>
+          <div class="contact-details">
+            <a href="https://wa.me/254111816896">+254 111-816-896</a>
+            <span class="contact-note">Available 24/7</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Contact Section -->
+  <section class="section main-contact">
+    <div class="container">
+      <div class="grid grid-2">
+        <!-- Contact Form -->
+        <div class="contact-form-section">
+          <h2>Send Us a Message</h2>
+          <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+          <form  class="contact-form"
+                 id="contact-form"
+                 action="https://formspree.io/f/xdkzzzrq"
+                 method="POST">
+                <input type="hidden" name="_replyto" value="" />
+                <input type="hidden" name="_subject" value="New Maize Supply Inquiry" />
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+              <label for="company">Company Name</label>
+              <input type="text" id="company" name="company">
+            </div>
+            <div class="form-group">
+              <label for="inquiryType">Type of Inquiry *</label>
+              <select id="inquiryType" name="inquiryType" required>
+                <option value="">Select inquiry type</option>
+                <option value="quote">Request Quote</option>
+                <option value="partnership">Partnership Opportunity</option>
+                <option value="general">General Information</option>
+                <option value="support">Customer Support</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="volume">Expected Monthly Volume (if applicable)</label>
+              <select id="volume" name="volume">
+                <option value="">Select volume range</option>
+                <option value="1-10">1-10 tons</option>
+                <option value="11-50">11-50 tons</option>
+                <option value="51-100">51-100 tons</option>
+                <option value="101-500">101-500 tons</option>
+                <option value="500+">500+ tons</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="5" placeholder="Please provide details about your inquiry, requirements, or any specific questions you have..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Business Information -->
+        <div class="business-info">
+          <h2>Business Information</h2>
+          
+          <div class="info-section">
+            <h3>Our Location</h3>
+            <p>Kibomet Norec<br>
+            226J+92M, Kitale<br>
+            Kenya</p>
+          </div>
+
+          <div class="info-section">
+            <h3>🕒 Business Hours</h3>
+            <div class="hours-list">
+              <div class="hours-item">
+                <span>Monday - Friday</span>
+                <span>8:00 AM - 6:00 PM</span>
+              </div>
+              <div class="hours-item">
+                <span>Saturday</span>
+                <span>9:00 AM - 4:00 PM</span>
+              </div>
+              <div class="hours-item">
+                <span>Sunday</span>
+                <span>Closed</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-section">
+            <h3>Service Areas</h3>
+            <p>We provide delivery services nationwide with regional distribution centers in:</p>
+            <ul>
+              <li>Rift Valley</li>
+              <li>Western</li>
+              <li>Central</li>
+              <li>Coast</li>
+            </ul>
+          </div>
+
+          <div class="info-section">
+            <h3>Emergency Contact</h3>
+            <p>For urgent supply needs or delivery issues:</p>
+            <p><strong>Emergency Hotline:</strong><br>
+            <a href="tel:+254111816896">+254 111-186-896</a><br>
+            <span class="contact-note">Available 24/7 for existing clients</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section faq-section">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>What is your minimum order quantity?</h3>
+          <p>Our minimum order quantity varies by product and packaging. For bulk orders, we typically start at 5 tons. For packaged products, minimum orders start at 100 bags. Contact us to discuss your specific needs.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How quickly can you fulfill orders?</h3>
+          <p>Standard orders are typically fulfilled within 3-5 business days. Rush orders can be accommodated with 24-48 hour turnaround for an additional fee, subject to availability.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you provide quality certificates?</h3>
+          <p>Yes, we provide comprehensive quality certificates including moisture content, protein levels, and contamination testing results with every shipment.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What payment terms do you offer?</h3>
+          <p>We offer flexible payment terms including net 30 for established clients, cash on delivery, and advance payment discounts. Terms can be customized based on order volume and relationship.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can you handle custom packaging requirements?</h3>
+          <p>Absolutely! We offer custom packaging solutions including private labeling, specific bag sizes, and specialized packaging materials to meet your requirements.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you offer long-term supply contracts?</h3>
+          <p>Yes, we provide long-term supply agreements with favorable pricing and guaranteed availability. These contracts can be structured for 6 months to 3 years based on your needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="section cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Get Started?</h2>
+        <p>Don't wait - contact us today to discuss your maize supply needs and discover how we can support your business success.</p>
+        <div class="cta-buttons">
+          <a href="tel:+254111816896" class="btn btn-primary">Call Now</a>
+          <a href="https://wa.me/+254111816896" class="btn btn-secondary">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    color: white;
+    padding: 120px 0 80px;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .contact-info {
+    background: white;
+  }
+
+  .contact-card {
+    text-align: center;
+    padding: 30px 20px;
+    background: #f9fafb;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+
+  .contact-card:hover {
+    background: white;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transform: translateY(-3px);
+  }
+
+  .contact-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+
+  .contact-card h3 {
+    font-size: 1.3rem;
+    color: #1f2937;
+    margin-bottom: 10px;
+  }
+
+  .contact-card p {
+    color: #6b7280;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+  .contact-details a {
+    display: block;
+    color: #22c55e;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    margin-bottom: 5px;
+  }
+
+  .contact-details a:hover {
+    color: #16a34a;
+  }
+
+  .contact-note {
+    color: #6b7280;
+    font-size: 0.9rem;
+  }
+
+  .main-contact {
+    background: #f9fafb;
+  }
+
+  .contact-form-section h2 {
+    font-size: 2rem;
+    color: #1f2937;
+    margin-bottom: 10px;
+  }
+
+  .contact-form-section p {
+    color: #6b7280;
+    margin-bottom: 30px;
+  }
+
+  .contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    display: block;
+    color: #1f2937;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #22c55e;
+  }
+
+  .form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  .business-info {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: fit-content;
+  }
+
+  .business-info h2 {
+    font-size: 2rem;
+    color: #1f2937;
+    margin-bottom: 30px;
+  }
+
+  .info-section {
+    margin-bottom: 30px;
+  }
+
+  .info-section h3 {
+    color: #1f2937;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .info-section p {
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+
+  .info-section ul {
+    color: #6b7280;
+    padding-left: 20px;
+  }
+
+  .info-section ul li {
+    margin-bottom: 5px;
+  }
+
+  .hours-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .hours-item {
+    display: flex;
+    justify-content: space-between;
+    color: #6b7280;
+    padding: 8px 0;
+    border-bottom: 1px solid #f3f4f6;
+  }
+
+  .hours-item:last-child {
+    border-bottom: none;
+  }
+
+  .faq-section {
+    background: white;
+  }
+
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+
+  .faq-item {
+    background: #f9fafb;
+    padding: 25px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+
+  .faq-item:hover {
+    background: white;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transform: translateY(-3px);
+  }
+
+  .faq-item h3 {
+    color: #1f2937;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  .faq-item p {
+    color: #6b7280;
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+
+  .cta {
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    color: white;
+  }
+
+  .cta-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Form Success/Error Messages */
+  .form-message {
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: none;
+  }
+
+  .form-message.success {
+    background: #f0fdf4;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+  }
+
+  .form-message.error {
+    background: #fef2f2;
+    color: #dc2626;
+    border: 1px solid #fecaca;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+
+    .form-row {
+      grid-template-columns: 1fr;
+    }
+
+    .contact-form,
+    .business-info {
+      padding: 20px;
+    }
+
+    .cta-content h2 {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+
+    .contact-form-section h2,
+    .business-info h2 {
+      font-size: 1.75rem;
+    }
+
+    .cta-content h2 {
+      font-size: 1.75rem;
+    }
+  }
+</style>
+
+<script>
+  // Contact form handling
+  document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('contact-form') as HTMLFormElement | null;
+  if (!form) return;
+    
+    form.addEventListener('submit', async function(e) {
+       console.log('📬 submit handler fired');
+      e.preventDefault();
+      
+      // Create form message element if it doesn't exist
+      let messageEl = document.querySelector('.form-message') as HTMLElement | null;
+      if (!messageEl) {
+        messageEl = document.createElement('div');
+        messageEl.className = 'form-message';
+        form.insertBefore(messageEl, form.firstChild);
+      }
+      
+      // Send the form data to Formspree
+     const response = await fetch(form.action, {
+       method: 'POST',
+       body: new FormData(form),
+       headers: { 'Accept': 'application/json' }
+     });
+ 
+     if (response.ok) {
+       messageEl.className = 'form-message success';
+       messageEl.textContent = 'Thank you! We’ve received your message.';
+       form.reset();
+     } else {
+       messageEl.className = 'form-message error';
+       messageEl.textContent = 'Oops—something went wrong. Please try again.';
+     }
+ 
+     // Show the banner (and then hide it)
+     messageEl.style.display = 'block';
+     setTimeout(() => { messageEl.style.display = 'none' }, 5000);
+    });
+  });
+</script>
